@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Afraid of Black</title>
+    <meta name="description" content="&#9609;&#9609;&#9609;&#9609;&#9609;">
+
+    <style>
+      @keyframes anxiety {
+        0% {
+          background-color: white;
+        }
+        100% {
+          background-color: black;
+        }
+      }
+
+      body {
+        animation-name: anxiety;
+        animation-duration: 15s;
+        animation-timing-function: ease-in;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+      }
+
+      .roald {
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+
+        font-family: Helvetica, sans-serif;
+        color: white;
+        text-decoration: none;
+        opacity: .3;
+
+        transition: opacity .08s ease-out;
+      }
+
+      .roald:hover {
+        text-decoration: underline;
+        opacity: 1;
+        transition: opacity .02s ease-in-out;
+      }
+    </style>
+  </head>
+  <body>
+    <a class="roald" href="https://roaldhacquebord.nl/" target="_blank">roald hacquebord</a>
+
+    <script>
+      var _paq = _paq || [];
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u="//piwik.hacquebordbuckles.nl/";
+        _paq.push(['setTrackerUrl', u+'piwik.php']);
+        _paq.push(['setSiteId', 8]);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    <noscript><p><img src="//piwik.hacquebordbuckles.nl/piwik.php?idsite=8" style="border:0;" alt="" /></p></noscript>
+  </body>
+</html>
